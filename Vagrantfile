@@ -61,7 +61,7 @@ Vagrant.configure(2) do |config|
   	vb.name = "ArledgeFinalProjectBox"
     vb.gui = true
     vb.customize ["modifyvm", :id, "--memory", "2048"]
-    vb.customize ["modifyvm", :id, "--cpus", "2"]   
+    vb.customize ["modifyvm", :id, "--cpus", "1"]   
     vb.customize ["modifyvm", :id, "--accelerate3d", "off"]
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ["modifyvm", :id, "--usb", "off"]
