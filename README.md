@@ -15,8 +15,7 @@ Installation & execution instructions:
 vagrant up
 	Note: this may take a while the first time its run. Vagrant will run the base box, launch the 	virtual machine and install the necessary software
 7.	Check to make sure that the default configurations of the virtual machine (found in the Vagrantfile) are compatible with your host machine, and make any changes necessary to the memory and number of cores allocated (note that you will be running 2 of these machines, so be sure that whatever is in the Vagrantfile*2 is still going to be okay)
- 
-If your machine is incapable of running two of these, then you can decrease the memory allocation to an acceptable value.
+ If your machine is incapable of running two of these, then you can decrease the memory allocation to an acceptable value.
 8.	Once the installation has completed, login to the VM (both username and password are “vagrant”).
 9.	Inside the VM, open a terminal and run 
 /home/vagrant/clion-2016.3.2/bin/clion.sh
