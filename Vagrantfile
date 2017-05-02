@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
   # The time in seconds that Vagrant will wait for the machine to boot and be accessible. By default this is 300 seconds
   #config.vm.boot_timeout = 300
   # set the host name value
-  config.vm.hostname = "cs281spring2017devbox"
+  config.vm.hostname = "ArledgeFinalProjectBox"
  
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  #config.vm.network "public_network"
+  config.vm.network "public_network"
   
   #If more than one network interface is available on the host machine, Vagrant will ask you to choose which interface the virtual machine should bridge to. A default interface can be specified by 
   #adding a :bridge clause to the network definition.
@@ -58,7 +58,7 @@ Vagrant.configure(2) do |config|
   #
   config.vm.provider "virtualbox" do |vb|
   	# DIsplay the name of the virtualbox 
-  	vb.name = "cs281spring2017devbox"
+  	vb.name = "ArledgeFinalProjectBox"
     vb.gui = true
     vb.customize ["modifyvm", :id, "--memory", "2048"]
     vb.customize ["modifyvm", :id, "--cpus", "2"]   
